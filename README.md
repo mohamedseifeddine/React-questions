@@ -195,5 +195,40 @@ Since the first letter in `hEADER` is lowercase, it will be considered as an HTM
 </p>
 </details>
 
+---
+
+##### 6. What's the output?
+
+```javascript
+class Course {
+  render() {
+    return <div>Course content</div>;
+  }
+}
+
+ReactDOM.render(<Course />, document.querySelector("#root"));
+```
+
+- A: Nothing
+- B: `<div>Course content</div>`
+- C: Error
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
+
+All class components in React must inherit from the base class `React.Component`.
+
+We can change the first line to the following:
+
+```javascript
+  class Course extends React.Component {
+```
+
+</p>
+</details>
+
+
 
 
